@@ -1,3 +1,4 @@
+### Project 2 - smart city challenge
 In this open challenge, you will conduct an exploratory analysis with a dataset on the trees of the city of Paris as part
 of the "Greening the City" program.
 
@@ -32,53 +33,38 @@ a non-technical audience to understand the different steps of your analysis and 
 - Move to the directory where you want to create the environment
 - in our case, create the environment in your project directory
 - for example, if you want to create the environment .env in the directory D:\OC_IA\P2\OC_IA_P2_concours_smart_city
-, you can do the following:
-conda create --prefix D:\OC_IA\P2\OC_IA_P2_concours_smart_city\.env python=3.9
+, you can do the following: conda create --prefix D:\OC_IA\P2\OC_IA_P2_concours_smart_city\.env python=3.9
 - Use 2 versions anterior to the latest version of python to ensure compatibility with the libraries you will use in 
 your project. this will create a new environment in the directory D:\OC_IA\P2\OC_IA_P2_concours_smart_city\.env
-- activate the environment
-conda activate D:\OC_IA\P2\- Alternatively, after activating your environment, you can install libraries individually
-using `pip`. This can be done within your Integrated Development Environment (IDE):
-  - Open your IDE.
+- activate the environment :
+conda activate D:\OC_IA\P2\OC_IA_P2_concours_smart_city\.env
+- Alternatively, after activating your environment, you can install libraries individually :
+- In PyCharm, you might also need to set up the project interpreter to use the environment you just created.
+  - Open your integrated development environment (IDE), such as PyCharm.
   - Open a terminal within the IDE.
-  - Activate your environment with:
-    ```
-    conda activate D:\OC_IA\P2\OC_IA_P2_concours_smart_city\.env
-    ```
-  - Then install the libraries one by one using `pip`. For example:
-    ```
-    pip install pandas
-    pip install numpy
-    pip install matplotlib
-    pip install seaborn
-    pip install notebook  # This will install Jupyter Notebook
-    ```
+  - Activate your environment with the following command (make sure to replace the path with the actual path to your environment):
+  - For example ine the IDE Pycharm pro, you can open the project directory D:\OC_IA\P2\OC_IA_P2_concours_smart_city,
+  - you go to settings, then project: OC_IA_P2_concours_smart_city, then python interpreter, then you click on the gear
+  add, then select conda environment, then choose existing environment
+  - (i.e. in our case D:\OC_IA\P2\OC_IA_P2_concours_smart_city\.env), then click on ok, then click on ok
+      ```
+      conda activate D:\OC_IA\P2\OC_IA_P2_concours_smart_city\.env
+      ```
+    - Then install the libraries one by one using `pip`. For example:
+      ```
+      pip install pandas
+      pip install numpy
+      pip install matplotlib
+      pip install seaborn
+      pip install notebook  # This will install Jupyter Notebook
+      ```
 
-- install the libraries you will use in your project :
-for example, to install pandas, numpy, matplotlib, seaborn, and jupyter notebook, you can do the following:
-conda install pandas numpy matplotlib seaborn jupyter
-- Alternatively, after activating your environment, you can install libraries individually using `pip`. This can be done
-within your Integrated Development Environment (IDE):
-  - Open your IDE.
-  - Open a terminal within the IDE.
-  - Activate your environment with:
-    ```
-    conda activate D:\OC_IA\P2\OC_IA_P2_concours_smart_city\.env
-    ```
-  - Then install the libraries one by one using `pip`. For example:
-    ```
-    pip install pandas
-    pip install numpy 
-    pip install matplotlib
-    pip install seaborn
-    pip install notebook  # This will install Jupyter Notebook
-    ```
-    
-- For example ine the IDE Pycharm pro, you can open the project directory D:\OC_IA\P2\OC_IA_P2_concours_smart_city,
-- you go to settings, then project: OC_IA_P2_concours_smart_city, then python interpreter, then you click on the gear
-add, then select conda environment, then choose existing environment
-- (i.e. in our case D:\OC_IA\P2\OC_IA_P2_concours_smart_city\.env), then click on ok, then click on ok
-- 
+  - install the libraries you will use in your project in one command line, for example, to install pandas, seaborn,
+  - notebook,matplotlib, you can do the following:
+   ```
+    pip install pandas numpy matplotlib seaborn notebook 
+  ```
+      
 ### References:
 - For details on conda and virtual environments, refer to the [Conda Environment Management Guide]
 (https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
